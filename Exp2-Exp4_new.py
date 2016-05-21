@@ -14,7 +14,7 @@ def combine_Exp2Exp4_Plots(L256_LinTS_d10, L256_LinTS_d20, L256_LinTS_d40,
                         Exp2_Step, Exp3_Step, Exp41_Step, Exp42_Step,
                         Exp2_ymax, Exp3_ymax, Exp41_ymax, Exp42_ymax):
 
-    plt.figure(figsize=(28,3))
+    plt.figure(figsize=(29,3))
 
     ##############################
     # Exp2 plot
@@ -150,6 +150,8 @@ def combine_Exp2Exp4_Plots(L256_LinTS_d10, L256_LinTS_d20, L256_LinTS_d40,
     ax.set_yticklabels(('0', '20k', '40k', '60k', '80k', '100k'))
     for tick in ax.yaxis.get_major_ticks():
             tick.label1.set_fontsize(16)
+    plt.subplots_adjust(left=None,bottom=None,right=None,top=None,wspace=0.3,hspace=None)
+
 
 def plot_Error_Bar(Step, avg_Regret, all_Regret, flag):
 

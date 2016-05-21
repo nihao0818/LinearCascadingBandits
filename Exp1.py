@@ -12,7 +12,7 @@ def combine_Three_Plots(L16_UCB, L256_UCB, Lmax_UCB,
                      L16_RankTS, L256_RankTS, Lmax_RankTS,
                      L16_Step, L256_Step, Lmax_Step):
 
-    plt.figure(figsize=(20,3))
+    plt.figure(figsize=(21,3))
 
     ##############################
     # generate the first plot
@@ -41,6 +41,7 @@ def combine_Three_Plots(L16_UCB, L256_UCB, Lmax_UCB,
     plt.ylim(0,4000)
 
     plt.title('$L = 16,\,K = 4$', fontsize=18)
+    plt.subplots_adjust(left=None,bottom=None,right=None,top=None,wspace=0.3,hspace=None)
 
     ##############################
     # generate the second plot
@@ -73,6 +74,7 @@ def combine_Three_Plots(L16_UCB, L256_UCB, Lmax_UCB,
     p2.text(100000/2,ymax * 1.25,'Yelp Restaurant Dataset',fontsize=20,verticalalignment="center",horizontalalignment="center")
 
     plt.title('$L = 256,\, K = 4$', fontsize=18)
+    plt.subplots_adjust(left=None,bottom=None,right=None,top=None,wspace=0.3,hspace=None)
 
     ##############################
     # generate the third plot
@@ -101,6 +103,8 @@ def combine_Three_Plots(L16_UCB, L256_UCB, Lmax_UCB,
     plt.ylim(0,4000)
 
     plt.title('$L = 3000,\, K = 4$', fontsize=18)
+    plt.subplots_adjust(left=None,bottom=None,right=None,top=None,wspace=0.3,hspace=None)
+
 
 def plot_Error_Bar(Step, avg_Regret, all_Regret, flag):
 
